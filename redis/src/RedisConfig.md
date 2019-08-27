@@ -108,6 +108,20 @@ public void set() {
 public Object get() {
     return redisTemplate.opsForValue.get("test");
 }
+
+//模糊批量操作 redis
+public void evictUserById(int id) {
+        try {
+
+            redisTemplate.delete(RedisInterface.USER_REDIS_ID_KEY + "::" + id);
+            Set keys1 = redisTemplate.keys(RedisInterface.COMBO_DAY_LIST_UPC_ID_KEY+"::*");
+            Set keys2 = redisTemplate.keys(RedisInterface.COMBO_DAY_LIST_TEL_KEY + "::*");
+            redisTemplate.delete(keys1);
+            redisTemplate.delete(keys2);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 ```
 
 # 注解式加缓存
