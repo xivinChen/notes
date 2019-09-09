@@ -5,4 +5,8 @@
 
 # 启动
 
-``docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.0.1``
+``docker run -p 9201:9201 -p 9301:9301 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.0.1``
+
+## mac下查看elasticearch的安装信息
+
+``brew info elastisearch``

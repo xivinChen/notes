@@ -116,3 +116,18 @@ tx-lcn:
 ```
 
 #官方教程：http://www.txlcn.org/zh-cn/docs/start.html
+
+
+# 报错处理
+
+## 1 报错信息：net.sf.jsqlparser.statement.update.Update……
+
+## 解决办法，引入依赖
+
+```
+    <dependency>
+     <groupId>com.github.jsqlparser</groupId>
+     <artifactId>jsqlparser</artifactId>
+     <version>1.4</version>
+    </dependency>
+```
