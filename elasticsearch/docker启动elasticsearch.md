@@ -10,3 +10,11 @@
 ## mac下查看elasticearch的安装信息
 
 ``brew info elastisearch``
+
+
+# springboot 操作elasticsearch api
+
+``https://blog.csdn.net/topdandan/article/details/81436141``
+
+# 高亮搜索
+``https://blog.csdn.net/weixin_38937840/article/details/93639105``
